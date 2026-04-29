@@ -1,12 +1,12 @@
 class Keybuddy < Formula
   desc "macOS keychain manager that replaces .env files, with AI agent skill bundle"
   homepage "https://github.com/frontmatters/keybuddy"
-  url "https://github.com/frontmatters/keybuddy/archive/refs/tags/v0.1.1.tar.gz"
+  url "https://github.com/frontmatters/keybuddy/archive/refs/tags/v0.1.2.tar.gz"
   # Run `shasum -a 256 v0.1.0.tar.gz` after creating the GitHub release
   # and replace the placeholder below.
-  sha256 "54d3115ebf4e9bd74c8c9d5185c9318607b06984c9798b2e8de82c7bb48391fa"
+  sha256 "e490688b6b139175407f86aed9a2a34f125586dbb463c7d838f2b40672a31464"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   depends_on :macos
 
@@ -51,7 +51,7 @@ class Keybuddy < Formula
   end
 
   test do
-    assert_match "keybuddy 0.1.1", shell_output("#{bin}/secrets --version")
-    assert_match "keybuddy 0.1.1", shell_output("#{bin}/keybuddy --version")
+    assert_match "keybuddy 0.1.2", shell_output("#{bin}/secrets --version")
+    assert_match "keybuddy 0.1.2", shell_output("#{bin}/keybuddy --version")
   end
 end
