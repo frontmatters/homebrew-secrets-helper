@@ -1,12 +1,12 @@
 class Keybuddy < Formula
   desc "macOS keychain manager that replaces .env files, with AI agent skill bundle"
   homepage "https://github.com/frontmatters/keybuddy"
-  url "https://github.com/frontmatters/keybuddy/archive/refs/tags/v0.1.0.tar.gz"
+  url "https://github.com/frontmatters/keybuddy/archive/refs/tags/v0.1.1.tar.gz"
   # Run `shasum -a 256 v0.1.0.tar.gz` after creating the GitHub release
   # and replace the placeholder below.
-  sha256 "71eca24d87ca9b64b91fc1a1ba03c3c381ae81c9c3825c3b772a6a50cd1f2268"
+  sha256 "54d3115ebf4e9bd74c8c9d5185c9318607b06984c9798b2e8de82c7bb48391fa"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   depends_on :macos
 
