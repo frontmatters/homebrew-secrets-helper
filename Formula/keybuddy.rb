@@ -51,7 +51,7 @@ class Keybuddy < Formula
   end
 
   test do
-    assert_match "keybuddy 0.1.0", shell_output("#{bin}/secrets --version")
-    assert_match "keybuddy 0.1.0", shell_output("#{bin}/keybuddy --version")
+    assert_match "keybuddy 0.1.1", shell_output("#{bin}/secrets --version")
+    assert_match "keybuddy 0.1.1", shell_output("#{bin}/keybuddy --version")
   end
 end
