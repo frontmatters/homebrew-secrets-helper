@@ -4,7 +4,7 @@ class Keybuddy < Formula
   url "https://github.com/frontmatters/keybuddy/archive/refs/tags/v0.1.0.tar.gz"
   # Run `shasum -a 256 v0.1.0.tar.gz` after creating the GitHub release
   # and replace the placeholder below.
-  sha256 "REPLACE_WITH_SHA256_AFTER_FIRST_RELEASE"
+  sha256 "71eca24d87ca9b64b91fc1a1ba03c3c381ae81c9c3825c3b772a6a50cd1f2268"
   license "MIT"
   version "0.1.0"
 
