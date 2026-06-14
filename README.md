@@ -19,7 +19,8 @@ secrets-helper-setup
 
 | Binary | Purpose |
 |--------|---------|
-| `secrets` | The CLI for credential operations (`secrets get/add/list/...`) |
+| `secrets-helper` | The CLI for credential operations (`secrets-helper get/add/list/...`) |
+| `secrets` | Short alias — symlink to `secrets-helper`, identical behavior |
 | `secrets-helper-setup` | Interactive setup wizard (creates keychain tiers, installs agent skill) |
 
 The sourceable bash function wrapper is installed at `$(brew --prefix)/opt/secrets-helper/libexec/secrets-helper.sh`. Add to your `~/.zshrc` or `~/.bashrc`:

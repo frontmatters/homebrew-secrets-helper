@@ -9,8 +9,10 @@ class SecretsHelper < Formula
   depends_on :macos
 
   def install
-    # The CLI binary is `secrets` (the `keybuddy` alias was removed in v0.2.0).
-    bin.install "bin/secrets"
+    # Primary command is `secrets-helper`; `secrets` is kept as a short alias.
+    # bin/secrets is invocation-name aware, so both names print correct usage.
+    bin.install "bin/secrets" => "secrets-helper"
+    bin.install_symlink "secrets-helper" => "secrets"
 
     # The sourceable bash function wrapper.
     libexec.install "lib/secrets-helper.sh"
@@ -52,6 +54,7 @@ class SecretsHelper < Formula
   end
 
   test do
+    assert_match "secrets-helper #{version}", shell_output("#{bin}/secrets-helper --version")
     assert_match "secrets-helper #{version}", shell_output("#{bin}/secrets --version")
   end
 end
