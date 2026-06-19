@@ -3,7 +3,7 @@ class SecretsHelper < Formula
   homepage "https://github.com/frontmatters/secrets-helper"
   url "https://github.com/frontmatters/secrets-helper/archive/refs/tags/v0.2.1.tar.gz"
   version "0.2.1"
-  sha256 "98c9745b5fcc6453a91dfb19f1bcd048d904eea0108e350a59dcf844f94baa52"
+  sha256 "27df7c00f86e45b18b4fff50980183c60411f4444db8c2a92e7e9c2e8f9947a4"
   license "MIT"
 
   depends_on :macos
