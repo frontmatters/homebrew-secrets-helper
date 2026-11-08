@@ -1,9 +1,9 @@
 class SecretsHelper < Formula
   desc "macOS keychain manager that replaces .env files, with AI agent skill bundle"
   homepage "https://github.com/frontmatters/secrets-helper"
-  url "https://github.com/frontmatters/secrets-helper/archive/refs/tags/v0.2.1.tar.gz"
-  version "0.2.1"
-  sha256 "27df7c00f86e45b18b4fff50980183c60411f4444db8c2a92e7e9c2e8f9947a4"
+  url "https://github.com/frontmatters/secrets-helper/archive/refs/tags/v0.3.0.tar.gz"
+  version "0.3.0"
+  sha256 "95cd63f253277a9c5ad1cfbec33983e37cf0e2982471ad79c64fdefc7e57ce90"
   license "MIT"
 
   depends_on :macos
